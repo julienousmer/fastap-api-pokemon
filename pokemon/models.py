@@ -24,3 +24,17 @@ class Type(BaseModel):
 
 class TypeCreate(Type):
     pass
+
+
+class Skill(BaseModel):
+    id: int
+    name: str
+    description: str
+    power: int
+    accuracy: int
+    life_max: int
+    type_name: str
+
+
+class SkillCreate(Skill):
+    pass
