@@ -49,7 +49,15 @@ L'API sera accessible à l'adresse http://localhost:8000 pour une utilisation lo
 
 ### Création des tables
 
-1. Table Pokemon
+1. SQLite / DB Browser
+
+L'utilisation d'une base de données SQLite (Base de données relationnelle entièrement contenue dans un fichier au sein du projet) a été fait car SQLite propose une mise en place rapide sans difficulté de configuration ou de mise en place.
+En effet, toute la base de données du projet d'API Pokémon est stockée dans un fichier .sqlite ce qui facilite la gestion ainsi que le déploiement.
+
+Pour la création et la modification de la base de données j'ai utilisé le logiciel Open Source DB Browser (Gestion de bases de données SQLite), qui a été conseillé par le professeur pour créer rapidement et efficacement les tables.
+
+   
+2. Table Pokemon
    
 ```
 CREATE TABLE "Pokemon" (
@@ -98,6 +106,23 @@ CREATE TABLE "Type" (
 NB : J'ai choisi suite à une discussion avec mon professeur lors du lancement de ce projet d'utiliser pour les relations 
 entre les pokémons ainsi que leur(s) type(s) et compétence(s) respectives d'utiliser une list d'entier, qui récupère les id des compétences et types attribués au pokémon.
 Ce choix m'a été conseillé par M. Aunim pour pouvoir attribuer 1 à n types et compétences à chacun des pokémons.
+
+
+## Tests et fonctionnalités
+
+### Postman
+
+J'ai choisi d'utiliser Postman, qui est une application de développement permettant de tester des API.
+Ce logiciel permet d'envoyer des requêtes au serveur Web et recevoir une réponse afin de l'analyser.
+
+Pour tester ce projet et avoir accès à la démonstration, voici le lien vers le workspace Postman avec une introduction (plus technique) au projet, les 10 endpoints ainsi qu'une documentation.
+
+https://documenter.getpostman.com/view/30768032/2s9YXo1eWK
+
+Merci pour votre attention ! 
+
+ © Julien Devienne-Ousmer M1 IL - IPI BLAGNAC
+
 
 
 
