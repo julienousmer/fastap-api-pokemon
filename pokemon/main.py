@@ -7,7 +7,6 @@ from models import PokemonCreate, TypeCreate, SkillCreate
 
 app = FastAPI()
 
-# Étape 2: Connectez-vous à la base de données SQLite en utilisant le module "databases"
 database = Database("sqlite:///./db/pokemon.sqlite")
 
 
